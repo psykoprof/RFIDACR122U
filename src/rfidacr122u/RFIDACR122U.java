@@ -33,7 +33,7 @@ public class RFIDACR122U {
         System.out.println("card: " + card);
         CardChannel channel = card.getBasicChannel();
         ResponseAPDU r = channel.transmit(new CommandAPDU(tab));
-        System.out.println("response: " + Arrays.toString(r.getBytes()));
+        //System.out.println("response: " + Arrays.toString(r.getBytes()));
         System.out.println("response: " + bytesToHexString(r.getBytes()));
 
         // disconnect
